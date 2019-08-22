@@ -9,4 +9,5 @@ class ProConfig(Config):
 
 
 class DevCofig(Config):
-    pass
+    debug = True
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:root1234@localhost:3306/blog'
