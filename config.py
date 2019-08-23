@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 class Config(object):
-    pass
+    SECREY_KEY = '82e518c39571bd501ed126f62acaf1b6%'
 
 
 class ProConfig(Config):

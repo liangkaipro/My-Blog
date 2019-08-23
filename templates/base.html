@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block tile %}Blog{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1><a href="{{ url_for('home') }}">My Blog</a></h1>
+        <p>Welcome to the blog!</p>
+    </div>
+    {% block body %}
+
+    {% endblock %}
+</div>
+<script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+
+</body>
+</html>
